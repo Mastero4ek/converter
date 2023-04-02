@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script defer src="./js/main.js"></script>
+
+	<title>Converter</title>
+</head>
+
+<body>
+	<div class="converter">
+		<div class="converter__wrapper">
+			<div class="converter__inputs inputs">
+				<div class="inputs__currency">
+					<label class="inputs__label">
+						<input id="input-usd" class="input" name="USD" type="text">
+
+						<span class="inputs__label-text">Доллар США <strong>(USD)</strong></span>
+					</label>
+
+					<label class="inputs__label">
+						<input id="input-eur" class="input" name="EUR" type="text">
+
+						<span class="inputs__label-text">Валюта Евросоюза <strong>(EUR)</strong></span>
+					</label>
+				</div>
+
+				<div class="inputs__img">
+					<img src="img/change.svg" alt="change">
+				</div>
+
+				<label class="inputs__label">
+					<input id="input-rub" class="input" name="RUB" type="text">
+
+					<span class="inputs__label-text">Российский рубль <strong>(RUB)</strong></span>
+				</label>
+			</div>
+
+			<div class="converter__settings setting">
+				<div class="setting__currency">
+					<label class="setting__label label">
+						<input value="USD" id="USD" type="radio" name="currency" class="setting__input radio">
+						<span class="setting__txt">usd</span>
+					</label>
+
+					<label class="setting__label label">
+						<input value="EUR" id="EUR" type="radio" name="currency" class="setting__input radio">
+						<span class="setting__txt">eur</span>
+					</label>
+				</div>
+
+				<button type="button" class="setting__button">Конвертировать</button>
+
+				<label class="setting__label label">
+					<input value="RUB" id="RUB" type="radio" name="currency" class="setting__input radio">
+					<span class="setting__txt">rub</span>
+				</label>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
